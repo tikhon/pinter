@@ -6,7 +6,7 @@ module Pinter
     default_params :api_key => Pinter.api_key, :api_secret => Pinter.api_secret
     format :json
 
-    attr_reader :first_name, :last_name, :recurring, :secret, :user, :product
+    attr_reader :first_name, :last_name, :recurring, :secret, :user, :product, :created_at
 
     def self.all
       all = get "/subscriptions"
@@ -15,7 +15,7 @@ module Pinter
 
     def self.find(secret)
       subscription = get "/subscriptions/#{secret}"
-      subscription.parsed_response
+      subscription = subscription.parsed_response
     end
 
   end

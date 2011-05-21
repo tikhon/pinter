@@ -32,3 +32,5 @@ module Pinter
   	@api_secret = api_secret
   end
 end
+
+require 'pinter/subscription'
