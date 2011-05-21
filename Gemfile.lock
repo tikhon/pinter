@@ -1,0 +1,23 @@
+PATH
+  remote: .
+  specs:
+    pinter (0.0.1)
+      curb (>= 0.7.15)
+      httparty (>= 0.4.3)
+      mash (>= 0.0.3)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    crack (0.1.8)
+    curb (0.7.15)
+    httparty (0.7.7)
+      crack (= 0.1.8)
+    mash (0.1.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (>= 1.0.0.rc.6)
+  pinter!
