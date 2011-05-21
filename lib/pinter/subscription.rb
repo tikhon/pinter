@@ -1,18 +1,22 @@
 module Pinter
-	class Subscription
+  class Subscription
 
-		include HTTParty
-		base_uri "http://www.pintpay.com/api/1"
-		default_params :api_key => Pinter.api_key, :api_secret => Pinter.api_secret
-	  format :json
+    include HTTParty
+    base_uri "http://www.pintpay.com/api/1"
+    default_params :api_key => Pinter.api_key, :api_secret => Pinter.api_secret
+    format :json
 
-		def self.all
-			get "/subscriptions"
-		end
+    attr_reader :first_name, :last_name, :recurring, :secret, :user, :product
 
-		def self.find(secret)
-			get "/subscriptions/#{secret}"
-		end
+    def self.all
+      all = get "/subscriptions"
+      all.to_a
+    end
 
-	end
+    def self.find(secret)
+      subscription = get "/subscriptions/#{secret}"
+      subscription.parsed_response
+    end
+
+  end
 end
