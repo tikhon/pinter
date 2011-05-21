@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "bundler", ">= 1.0.0.rc.6"
 
   s.add_dependency 'mash', '>= 0.0.3'
-  s.add_dependency 'httparty', '>= 0.4.3'
+  s.add_dependency 'httparty', '>= 0.7.7'
 
   s.files        = `git ls-files`.split("\n")
   s.executables  = `git ls-files`.split("\n").map{|f| f =~ /^bin\/(.*)/ ? $1 : nil}.compact
