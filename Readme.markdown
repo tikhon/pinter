@@ -1,4 +1,4 @@
-# pinter
+# Pinter
 
 The Ruby [PintPay API](https://www.pintpay.com/api_docs) Gem. PintPay helps collect payments for your app. Now with a Ruby wrapper.
 
@@ -27,6 +27,7 @@ Returns the hash of one subscription. Use the subscription's "secret" attribute 
 
 ## Todo
 
+*   Tests.
 *   Convert the subscription hashes to subscription objects.
 *   Make Subscription.all return an array of subscription objects.
 *   Support PintPay's webhooks.
