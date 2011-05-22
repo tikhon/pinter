@@ -16,8 +16,16 @@ module Pinter
     end
 
     def self.all
-      all = get "/subscriptions"
-      all.to_a
+      collection = []
+      raw = get "/subscriptions"
+
+      raw.to_a
+      raw.each do |attributes|
+        obj = Pinter::Subscription.new attributes
+        collection << obj
+      end
+
+      return collection
     end
 
     def self.find(secret)
