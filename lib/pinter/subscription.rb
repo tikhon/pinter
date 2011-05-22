@@ -2,17 +2,15 @@ module Pinter
   class Subscription
 
     include HTTParty
+    include Base
     base_uri "http://www.pintpay.com/api/1"
     default_params :api_key => Pinter.api_key, :api_secret => Pinter.api_secret
     format :json
 
     attr_reader :first_name, :last_name, :recurring, :secret, :user, :product, :created_at
 
-    def initialize(hash)
-      @first_name = hash["first_name"]
-      @last_name = hash["last_name"]
-      @recurring = hash["recurring"]
-      @secret = hash["secret"]
+    def initialize(attributes)
+      set_instance_variables_from_hash attributes
     end
 
     def self.all
