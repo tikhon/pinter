@@ -28,8 +28,6 @@ Returns the hash of one subscription. Use the subscription's "secret" attribute 
 ## Todo
 
 *   Tests.
-*   Convert the subscription hashes to subscription objects.
-*   Make Subscription.all return an array of subscription objects.
 *   Support PintPay's webhooks.
 
 #### Copyright
