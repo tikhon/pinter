@@ -33,4 +33,5 @@ module Pinter
   end
 end
 
+require 'pinter/hash'
 require 'pinter/subscription'
