@@ -19,7 +19,7 @@ Returns an array of your subscriptions.
 
     Pinter::Subscription.all
 
-#### Find specific subscription
+### Find specific subscription
 
 Returns the hash of one subscription. Use the subscription's "secret" attribute to find it.
 
