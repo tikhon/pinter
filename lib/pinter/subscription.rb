@@ -12,6 +12,7 @@ module Pinter
     def initialize(attributes)
       set_instance_variables_from_hash attributes
       @user = Pinter::User.new attributes["user"]
+      @product = Pinter::Product.new attributes["product"]
     end
 
     def self.all
