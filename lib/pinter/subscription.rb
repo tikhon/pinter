@@ -11,6 +11,7 @@ module Pinter
 
     def initialize(attributes)
       set_instance_variables_from_hash attributes
+      @user = Pinter::User.new attributes["user"]
     end
 
     def self.all

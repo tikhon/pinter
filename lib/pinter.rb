@@ -36,3 +36,4 @@ end
 require 'pinter/hash'
 require 'pinter/base'
 require 'pinter/subscription'
+require 'pinter/user'
