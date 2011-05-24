@@ -28,6 +28,9 @@ Returns the hash of one subscription. Use the subscription's "secret" attribute 
 ## Todo
 
 *   Tests.
+*   Throw an exception when you forget to set your API key and secret.
+*   Refactor the Pinter::Subscription default_params.
+*   More tests.
 *   Support PintPay's webhooks.
 
 #### Copyright
