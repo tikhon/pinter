@@ -4,7 +4,7 @@ module Pinter
     include HTTParty
     include Base
     base_uri "http://www.pintpay.com/api/1"
-    default_params :api_key => Pinter.api_key, :api_secret => Pinter.api_secret
+    # default_params :api_key => Pinter.api_key, :api_secret => Pinter.api_secret
     format :json
 
     attr_reader :first_name, :last_name, :recurring, :secret, :user, :product, :created_at
@@ -17,7 +17,7 @@ module Pinter
 
     def self.all
       collection = []
-      raw = get "/subscriptions"
+      raw = get "/subscriptions", :query => { :api_key => Pinter.api_key, :api_secret => Pinter.api_secret }
 
       raw.to_a
       raw.each do |attributes|
@@ -29,7 +29,7 @@ module Pinter
     end
 
     def self.find(secret)
-      sub = get "/subscriptions/#{secret}"
+      sub = get "/subscriptions/#{secret}", :query => { :api_key => Pinter.api_key, :api_secret => Pinter.api_secret }
       sub = sub.parsed_response
       sub.to_subscription
     end

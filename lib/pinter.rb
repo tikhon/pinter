@@ -1,6 +1,4 @@
-require 'forwardable'
 require 'rubygems'
-require 'mash'
 require 'httparty'
 
 class APIKeyNotSet < StandardError
@@ -13,7 +11,7 @@ end
 
 module Pinter
   def self.api_key
-    raise APIKeyNotSet if @api_key.nil?
+    # raise APIKeyNotSet if @api_key.nil?
 
     @api_key
   end
@@ -23,7 +21,7 @@ module Pinter
   end
 
   def self.api_secret
-  	raise APISecretNotSet if @api_secret.nil?
+  	# raise APISecretNotSet if @api_secret.nil?
 
     @api_secret
   end
