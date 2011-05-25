@@ -12,6 +12,7 @@ Get your API key and API secret from [your API page](https://www.pintpay.com/api
 
     Pinter.api_key = "25fdbd9bs0f3sa00f0ecg3e20bja1fag"
     Pinter.api_secret = "93a76x73afhe4hgbeqd2720e7eetfu19"
+    Pinter.subdomain = "your-subdomain"
 
 ### List all subscriptions
 
@@ -24,6 +25,16 @@ Returns an array of your subscriptions.
 Returns the hash of one subscription. Use the subscription's "secret" attribute to find it.
 
     Pinter::Subscription.find "23862dc3979f365d"
+
+### URL
+
+Returns the URL to your PintPay page.
+
+    Pinter.url
+
+You can also supply the parameters, like the user's email and identifier.
+
+    Pinter.url :email => "user@domain.com", :identifier => "1"
 
 ## Todo
 
