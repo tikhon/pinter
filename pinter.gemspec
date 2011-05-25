@@ -7,9 +7,9 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Nathan Borgo"]
   s.email       = ["nathan@subtractiv.com"]
-  s.homepage    = "http://rubygems.org/gems/pinter"
-  s.summary     = "Wrapper for PintPay's API"
-  s.description = "A wrapper for PintPay's payment API and webhooks"
+  s.homepage    = "https://github.com/subtractiv/pinter"
+  s.summary     = "Wrapper for PintPay's API."
+  s.description = "A wrapper for PintPay's payment API and webhooks."
 
   s.required_rubygems_version = ">= 1.3.6"
   s.rubyforge_project         = "pinter"
