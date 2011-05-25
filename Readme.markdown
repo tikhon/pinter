@@ -26,7 +26,7 @@ Returns the hash of one subscription. Use the subscription's "secret" attribute 
 
     Pinter::Subscription.find "23862dc3979f365d"
 
-### URL
+### See your page's URL
 
 Returns the URL to your PintPay page.
 
@@ -46,4 +46,4 @@ You can also supply the parameters, like the user's email and identifier.
 
 #### Copyright
 
-Copyright (c) 2011 Nathan Borgo. See LICENSE for details.
+Copyright (c) 2011 Nathan Borgo. See License for details.
