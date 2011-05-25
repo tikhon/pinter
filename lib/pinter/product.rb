@@ -1,13 +1,13 @@
 module Pinter
-	class Product
+  class Product
 
-		include Base
+    include Base
 
-		attr_reader :name, :price_in_cents, :recurring, :created_at
+    attr_reader :name, :price_in_cents, :recurring, :created_at
 
-		def initialize(attributes)
-			set_instance_variables_from_hash attributes
-		end
+    def initialize(attributes)
+      set_instance_variables_from_hash attributes
+    end
 
-	end
+  end
 end

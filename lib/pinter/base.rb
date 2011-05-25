@@ -1,5 +1,5 @@
 module Pinter
-	module Base
+  module Base
 
     def set_instance_variables_from_hash(hash)
       hash.each do |key, value|
@@ -7,5 +7,5 @@ module Pinter
       end
     end
 
-	end
+  end
 end

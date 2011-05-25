@@ -1,13 +1,13 @@
 module Pinter
-	class User
+  class User
 
-		include Base
+    include Base
 
-		attr_reader :email, :identifier, :name, :created_at
+    attr_reader :email, :identifier, :name, :created_at
 
-		def initialize(attributes)
-			set_instance_variables_from_hash attributes
-		end
+    def initialize(attributes)
+      set_instance_variables_from_hash attributes
+    end
 
-	end
+  end
 end
