@@ -34,5 +34,8 @@ module Pinter
       sub.to_subscription
     end
 
+    def cancel
+      put "/subscriptions/#{secret}/cancel", :query => { :api_key => Pinter.api_key, :api_secret => Pinter.api_secret }
+    end
   end
 end
